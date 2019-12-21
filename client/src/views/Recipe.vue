@@ -21,7 +21,7 @@
 				cols='6'>
 				<h4><em>Ingredients:</em></h4>
 				<ul>
-					<li class="pt-3" v-for="ingredient in myRecipe.ingredients" v-bind:key="ingredient">
+					<li class="pt-3" v-for="(ingredient, index) in myRecipe.ingredients" v-bind:key="index">
 					{{ingredient}}
 					</li>
 				</ul>
@@ -32,7 +32,7 @@
 				<h4><em>Steps:</em></h4>
 				<ol>
 					<li class="pt-3"
-					v-for="step in myRecipe.steps" v-bind:key="step">
+					v-for="(step, index) in myRecipe.steps" v-bind:key="index">
 					{{step}}
 					</li>
 				</ol>

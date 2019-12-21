@@ -3,6 +3,9 @@ import VueRouter from 'vue-router'
 import Home from '../views/Home.vue'
 import Add from '../views/Add.vue'
 import Recipe from '../views/Recipe.vue'
+import Login from '../views/Login.vue'
+import Signup from '../views/Signup.vue'
+
 
 Vue.use(VueRouter)
 
@@ -21,6 +24,14 @@ const routes = [
 		path:'/recipe/:id',
 		component: Recipe,
 		props: true
+	},
+	{
+		path:'/login',
+		component: Login
+	},
+	{
+		path:'/signup',
+		component: Signup
 	}
 ]
 
